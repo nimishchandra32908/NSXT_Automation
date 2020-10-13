@@ -1,0 +1,19 @@
+---
+# Site A Variables
+site_name: IAC-PDC
+
+## NTP Servers
+ntp_server_default: 10.1.22.10
+ntp_server_1: 
+ntp_server_2: 
+ntp_server_3: 
+ntp_server_4: 
+
+# DNS Servers
+dns_server_1: 10.1.22.10
+dns_server_2: 
+
+# Site A Management vCenter Details
+mgmt_vcenter_server: "yourVcenter"
+mgmt_vcenter_datacenter: "IAC-PDC"
+mgmt_vcenter_cluster: "Compute-Cluster"
