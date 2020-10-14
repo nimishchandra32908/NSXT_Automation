@@ -2,7 +2,7 @@
 # tasks file for nsxt_deploy_ova
 - name: deploy NSX-T Manager OVA
   nsxt_deploy_ova:
-    ovftool_path: "{{ nsxt_ovftool_path }}"
+    ovftool_path: "/usr/bin"
     path_to_ova: "{{ nsxt_ova_path }}"
     ova_file: "{{ nsxt_ova_filename }}"
     datacenter: "{{ nsxt_deployment_datacenter }}"
