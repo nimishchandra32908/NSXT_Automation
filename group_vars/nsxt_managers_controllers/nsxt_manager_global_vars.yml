@@ -1,8 +1,8 @@
 {
   # NSX-T OVF/OVA Variables
-  nsxt_ovftool_path: "/usr/bin",
-  nsxt_ova_path: "/mnt/iso/VMware/NSX/NSX-T/v-3.x/",
-  nsxt_ova_filename: "nsx-unified-appliance-3.0.2.0.0.16887203.ova",
+  "nsxt_ovftool_path": "/usr/bin",
+  "nsxt_ova_path": "/mnt/iso/VMware/NSX/NSX-T/v-3.x/",
+  "nsxt_ova_filename": "nsx-unified-appliance-3.0.2.0.0.16887203.ova",
 
   # NSX-T Default Deployment Variables
   nsxt_default_deployment_size: "small",
