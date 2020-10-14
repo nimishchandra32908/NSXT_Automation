@@ -1,4 +1,7 @@
 ---
+
+
+
 # Site A CMP NSX-T Deployment Details
 nsxt_datastore: "vsanDatastore"
 nsxt_portgroup: "Management"
