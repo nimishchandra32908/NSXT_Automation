@@ -21,7 +21,7 @@
     cli_password: "{{ nsxt_cli_password }}"    
     deployment_size: "{{ nsxt_deployment_size }}"
     ssh_enabled: "{{ nsxt_ssh_enabled }}"
-    role: "{{ nsxt_default_role }}"
+    role: "{{ nsxt_role }}"
 
 - name: Check NSX-T Manager Status
   include_role:
