@@ -15,7 +15,7 @@
     dns_domain: "{{ dns_default_domain }}"
     ntp_server: "{{ ntp_server_default }}"
     gateway: "{{ nsxt_network_gateway }}"
-    ip_address: "{{ nsxt_network_ip_address }}"
+    ip_address: "{{ nsx_node1.nsxt_network_ip_address }}"
     netmask: "{{ nsxt_network_netmask }}"
     admin_password: "{{ nsxt_admin_password }}"
     cli_password: "{{ nsxt_cli_password }}"    
