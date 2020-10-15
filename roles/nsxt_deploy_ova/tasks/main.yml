@@ -1,20 +1,12 @@
 ---
-# handlers file for nsxt_deploy_ova
-- hosts: localhost
-  vars:
-    vmware:
-      host: '{{ lookup("env", "VMWARE_HOST") }}'
-      username: '{{ lookup("env", "VMWARE_USER") }}'
-      password: '{{ lookup("env", "VMWARE_PASSWORD") }}'       
-
 - name: deploy NSX-T Manager OVA
   nsxt_deploy_ova:
     ovftool_path: "{{ nsxt_ovftool_path }}"
     path_to_ova: "{{ nsxt_ova_path }}"
     ova_file: "{{ nsxt_ova_filename }}"
-    vcenter: "{{ vmware.host }}"
-    vcenter_user: "{{ vmware.username }}"
-    vcenter_passwd: "{{ vmware.password }}"   
+    vcenter: '{{ lookup("env", "VMWARE_HOST") }}'
+    vcenter_user: '{{ lookup("env", "VMWARE_USER") }}'
+    vcenter_passwd: '{{ lookup("env", "VMWARE_PASSWORD") }}'   
     datacenter: "{{ nsx_node1.nsxt_deployment_datacenter }}"
     cluster: "{{ nsx_node1.nsxt_deployment_cluster }}"
     datastore: "{{ nsx_node1.nsxt_deployment_datastore }}"
