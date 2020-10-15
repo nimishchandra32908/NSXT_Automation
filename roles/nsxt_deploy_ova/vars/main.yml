@@ -25,9 +25,9 @@
   nsxt_network_netmask: "255.255.255.0",
 
   # NSX-T Default Deployment Variables
-  nsxt_default_deployment_size: "small",
-  nsxt_default_role: "nsx-manager nsx-controller",
-  nsxt_default_origin_type: "vCenter",
+  nsxt_deployment_size: "small",
+  nsxt_role: "nsx-manager nsx-controller",
+  nsxt_origin_type: "vCenter",
   
   # SDDC NSX-T User Accounts
   nsxt_admin_username: "admin",
