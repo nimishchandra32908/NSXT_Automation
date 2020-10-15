@@ -1,4 +1,5 @@
 ---
+---
 # vars file for nsxt_deploy_ova
 {
   # NSX-T OVF/OVA Variables
@@ -7,15 +8,15 @@
   nsxt_ova_filename: "nsx-unified-appliance-3.0.2.0.0.16887203.ova",
   
   ## NTP Servers
-  ntp_server_default: 10.1.22.10
-  ntp_server_1: 
-  ntp_server_2: 
-  ntp_server_3: 
-  ntp_server_4: 
+  ntp_server_default: 10.1.22.10,
+  ntp_server_1: "",
+  ntp_server_2: "",
+  ntp_server_3: "",
+  ntp_server_4: "",
 
   # DNS Servers
-  dns_server_1: 10.1.22.10
-  dns_server_2: 
+  dns_server_1: 10.1.22.10,
+  dns_server_2: "blank",
 
   # NSX-T Default Deployment Variables
   nsxt_default_deployment_size: "small",
