@@ -1,7 +1,7 @@
 ---
 - name: deploy NSX-T Manager OVA
   nsxt_deploy_ova:
-    ovftool_path: "/usr/bin"
+    ovftool_path: "/usr/lib/vmware-ovftool/"
     path_to_ova: "{{ nsxt_ova_path }}"
     ova_file: "{{ nsxt_ova_filename }}"
     vcenter: '{{ lookup("env", "VMWARE_HOST") }}'
