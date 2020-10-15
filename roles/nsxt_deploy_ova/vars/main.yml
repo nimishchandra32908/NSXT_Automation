@@ -16,11 +16,29 @@
   # DNS Servers
   dns_server_1: 10.1.22.10,
   dns_server_2: "blank",
+  
+  # DNS Default Domain
+  dns_default_domain: 10.1.22.10,
+  
+  #NSX-T Gateway
+  nsxt_network_gateway: "10.1.10.254",
+  nsxt_network_netmask: "255.255.255.0",
 
   # NSX-T Default Deployment Variables
   nsxt_default_deployment_size: "small",
   nsxt_default_role: "nsx-manager nsx-controller",
   nsxt_default_origin_type: "vCenter",
+  
+  # SDDC NSX-T User Accounts
+  nsxt_admin_username: "admin",
+  nsxt_admin_password: "Admin@123",
+  nsxt_cli_password: "Admin@123",
+
+  ## Compute Manager User Permissions.
+  # This account is used to connect NSX-T to the compute manager
+  nsxt_cm_username: svc_nsx@dryicelab.com,
+  nsxt_cm_password: password1,
+
 
   # NSX-T Misc Variables
   nsxt_ssh_enabled: True,
