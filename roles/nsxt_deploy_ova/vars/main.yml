@@ -1,2 +1,58 @@
 ---
 # vars file for nsxt_deploy_ova
+{
+  # NSX-T OVF/OVA Variables
+  nsxt_ovftool_path: "/usr/bin",
+  nsxt_ova_path: "/mnt/iso/VMware/NSX/NSX-T/v-3.x/",
+  nsxt_ova_filename: "nsx-unified-appliance-3.0.2.0.0.16887203.ova",
+
+  # NSX-T Default Deployment Variables
+  nsxt_default_deployment_size: "small",
+  nsxt_default_role: "nsx-manager nsx-controller",
+  nsxt_default_origin_type: "vCenter",
+
+  # NSX-T Misc Variables
+  nsxt_ssh_enabled: True,
+  nsxt_validate_certs: False,
+  nsxt_status_check_delay: 50,
+  nsxt_default_mtu: 1600,
+
+
+  #First NSX appliance node. Defined separate based on the consumption.
+    # Accepts both IP (IPv4) and FQDN for 'mgmt_ip'
+    #
+    "nsx_node1": {
+      "hostname": "iacnsxm01.dryicelabs.com",
+      "nsxt_network_ip_address": "10.1.22.3",
+      "nsxt_deployment_datacenter": "IAC-PDC",
+      "nsxt_deployment_cluster": "Compute-Cluster",
+      "nsxt_deployment_datastore": "shared_storage_01",
+      "nsxt_deployment_portgroup": "vlan1002"
+  },
+
+  #
+  # Additional nodes defined as an array so that its easier to iterate
+  # through them in the playbook.
+  #
+  "additional_nodes": [
+    {
+      "hostname": "mynsx-02.mylab.local",
+      "mgmt_ip": "10.114.200.42",
+      "prefix": "27",
+      "datacenter": "Datacenter",
+      "cluster": "Management",
+      "datastore": "datastore36",
+      "portgroup": "VM Network"
+    },
+    {
+      "hostname": "mynsx-03.mylab.local",
+      "mgmt_ip": "10.114.200.43",
+      "prefix": "27",
+      "datacenter": "Datacenter",
+      "cluster": "Management",
+      "datastore": "datastore36",
+      "portgroup": "VM Network"
+    }
+  ],
+
+}
