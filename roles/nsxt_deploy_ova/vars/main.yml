@@ -26,7 +26,7 @@
 
   # NSX-T Default Deployment Variables
   nsxt_deployment_size: "small",
-  nsxt_role: "nsx-manager nsx-controller",
+  nsxt_role: "NSX-Manager",
   nsxt_origin_type: "vCenter",
   
   # SDDC NSX-T User Accounts
