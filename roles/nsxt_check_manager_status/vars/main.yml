@@ -1,2 +1,13 @@
 ---
+
+{
 # vars file for nsxt_check_manager_status
+"nsx_node1": {
+      "hostname": "iacnsxm01.dryicelabs.com",
+},
+  # SDDC NSX-T User Accounts
+  nsxt_admin_username: "admin",
+  nsxt_admin_password: "Admin@123",
+  nsxt_validate_certs: False,
+  nsxt_status_check_delay: 50,
+ }
